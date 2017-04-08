@@ -1,0 +1,30 @@
+<?php
+$useragent=$_SERVER['HTTP_USER_AGENT'];
+$default = $anroid = $ios = false;
+if(!preg_match('/android/i',$useragent) && !preg_match('/ip(hone|od)/i',$useragent))
+    $default = true;
+if(preg_match('/android/i',$useragent))
+   $anroid = true;
+if(preg_match('/ip(hone|od)/i',$useragent))
+    $ios = true;
+    
+if(!$_GET['p'] && $default)
+    header('Location: http://instagram.com/sananbozkurt');
+    
+if(!$_GET['p'] && $ios)
+    header('Location: /?p=ios');
+if(!$_GET['p'] && $anroid)
+    header('Location: /?p=android');
+    
+if($_GET['p']=='android'){
+?>
+<script>
+    window.location='intent://instagram.com/_u/sananbozkurt/#Intent;package=com.instagram.android;scheme=https;end';
+</script>
+<?
+} if($_GET['p']=='ios') {
+?>
+<script>
+    window.location='instagram://user?username=sananbozkurt';
+</script>
+<? } 
