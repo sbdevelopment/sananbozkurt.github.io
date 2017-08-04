@@ -1,5 +1,6 @@
 body{
-    padding:0px 0px;margin:0px 0px;
+    padding: 0px;
+    margin: 0px;
     font-family: Helvetica,Verdana;
     background:#f9f7f7;
     font-size: 12px;
@@ -7,14 +8,21 @@ body{
     width:100%;
     overflow:hidden;
 }
-div {
+#about-me {
     display: block;
     float: left;
+    padding: 5%;
 }
 .page {
-    width: 95%;
+    width: 94.4%;
     color:#212121;
     font-size: 14px;
+    background: #fff;
+    margin: 5px 1%;
+    text-align: left;
+    padding: 5px 15px 10px 20px;
+    display: block;
+    float: left;
 }
 #hello-massage {
     width: 100%;
@@ -56,5 +64,5 @@ div {
     font-family:Tahoma, Sans !important;
 }
 a {
-    color: #85523a;
+    color: #5838a7;
 }
