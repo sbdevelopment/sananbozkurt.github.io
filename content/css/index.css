@@ -64,7 +64,7 @@ body{
     font-family:Tahoma, Sans !important;
 }
 a {
-    color: #5838a7;
+    color: #0088da;
 }
 
 div#write-me {
@@ -72,11 +72,11 @@ div#write-me {
     margin: 5%;
     line-height: 35px;
     padding: 0px 10px;
-    background: #4a4788;
+    background: #222;
     display: block;
     float: left;
     color: #fff;
-    border: 1px solid #2c286d;
+    border: 1px solid #101010;
     border-radius: 2.6px;
     cursor: pointer;
 }
